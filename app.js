@@ -60,7 +60,7 @@ passport.use(
             }
           } else {
             return done(null, false, {
-              message: "With This email user doesn't exists",
+              message: "There's no user exists with this email",
             });
           }
         })
