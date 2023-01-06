@@ -266,8 +266,8 @@ app.post("/users", async (req, res) => {
         if (e.message == "Please give the firstName") {
           req.flash("error", "Please give the firstName");
         }
-        if (e.message == "Please provide email_id") {
-          req.flash("error", "Please provide email_id");
+        if (e.message == "Please do provide your email_id") {
+          req.flash("error", "Please do provide your email_id");
         }
       });
       return res.redirect("/signup");
