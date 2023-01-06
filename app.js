@@ -263,8 +263,8 @@ app.post("/users", async (req, res) => {
     console.log(error.name);
     if (error.name == "SequelizeValidationError") {
       error.errors.forEach((e) => {
-        if (e.message == "Please provide a firstName") {
-          req.flash("error", "Please provide a firstName");
+        if (e.message == "Please give the firstName") {
+          req.flash("error", "Please give the firstName");
         }
         if (e.message == "Please provide email_id") {
           req.flash("error", "Please provide email_id");
