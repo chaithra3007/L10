@@ -55,7 +55,7 @@ passport.use(
               return done(null, user);
             } else {
               return done(null, false, {
-                message: "Invalid password",
+                message: "Wrong password",
               });
             }
           } else {
